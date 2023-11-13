@@ -1,6 +1,8 @@
 **Work-In-Progress**
 
-# Alveo U25 Setup and Usage Notes
+# Alveo U25 FPGA Setup and Usage Notes
+
+These notes were moved from [`github.com/mwrnd/notes/Alveo_U25`](https://github.com/mwrnd/notes/tree/8efe9930abd3d7bd873c2af624ba376467338c77/Alveo_U25).
 
 Currently focused on trying to [debug a faulty Alveo U25](debug_log.md).
 
@@ -8,7 +10,9 @@ The [Alveo U25](https://www.xilinx.com/content/dam/xilinx/publications/product-b
 
 ![Alveo U25 Overview](img/AlveoU25_Overview.png)
 
-These notes were moved from [`github.com/mwrnd/notes`](https://github.com/mwrnd/notes/tree/8efe9930abd3d7bd873c2af624ba376467338c77/Alveo_U25).
+I use a [PCIe x16-to-x8 Debifurcator](https://github.com/mwrnd/PCIe_x16-to-x8_Debifurcator) to allow the board to work in systems that do not support [PCIe Bifurcation](https://www.startech.com/en-us/blog/what-is-pcie-bifurcation).
+
+![Alveo U25 and Debifurcator In-System](img/Alveo_U25_System.jpg)
 
 
 
@@ -69,9 +73,9 @@ exit
 
 #### Connect JTAG Adapter and Allow Vivado to Update Platform Cable USB II Firmware
 
-Connect your JTAG Adapter to the Alveo U25. The Alveo needs to be powered over its PCIe connection.
+Connect your JTAG Adapter to the Alveo U25 using the [Alveo U25 JTAG Adapter](https://github.com/mwrnd/AlveoU25_JTAG_Adapter). The Alveo needs to be powered over its PCIe connection.
 
-![JTAG Connected](img/AlveoU25_JTAG_Connected.jpg)
+![JTAG Connected](img/Alveo_U25_JTAG_Adapter_In_Use.jpg)
 
 If you are using a Platform Cable USB II compatible adapter it will show up under `lsusb` as `03fd:0013 Xilinx, Inc.` In this state it _CANNOT_ be used for JTAG.
 
