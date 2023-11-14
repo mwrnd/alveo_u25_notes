@@ -1,14 +1,18 @@
 **Work-In-Progress**
 
+
+The [Alveo U25](https://www.xilinx.com/content/dam/xilinx/publications/product-briefs/alveo-u25-product-brief.pdf) combines a [SFC9250 X2 GbE Controller](https://www.xilinx.com/products/boards-and-kits/x2-series.html) with an [XCU25](https://en.wikipedia.org/w/index.php?title=List_of_Xilinx_FPGAs&oldid=1129244401)==[XCZU19EG-FFVC1760](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html#eg) FPGA. It has an x16 PCIe interface that is bifurcated to two x8 interfaces, one for the X2 Ethernet Controller and the other for the FPGA.
+
+![Alveo U25 Overview](img/AlveoU25_Overview.png)
+
+
+
+
 # Alveo U25 FPGA Setup and Usage Notes
 
 These notes were moved from [`github.com/mwrnd/notes/Alveo_U25`](https://github.com/mwrnd/notes/tree/8efe9930abd3d7bd873c2af624ba376467338c77/Alveo_U25).
 
-Currently focused on trying to [debug a faulty Alveo U25](debug_log.md).
-
-The [Alveo U25](https://www.xilinx.com/content/dam/xilinx/publications/product-briefs/alveo-u25-product-brief.pdf) is based on the [XCU25](https://en.wikipedia.org/w/index.php?title=List_of_Xilinx_FPGAs&oldid=1129244401)==[XCZU19EG-FFVC1760](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html#eg).
-
-![Alveo U25 Overview](img/AlveoU25_Overview.png)
+Currently focused on trying to [debug an Alveo U25](debug_log.md) board that came without any X2 firmware. I have been unable to find a complete copy of the U25's X2 firmware.
 
 I use a [PCIe x16-to-x8 Debifurcator](https://github.com/mwrnd/PCIe_x16-to-x8_Debifurcator) to allow the board to work in systems that do not support [PCIe Bifurcation](https://www.startech.com/en-us/blog/what-is-pcie-bifurcation).
 
