@@ -651,6 +651,19 @@ mwr 0xFF5E0200 0x0100
 rst -system
 ```
 
+Unfortunately, reseting into JTAG Boot mode fails with the Mode1 Pin at 0.
+
+![Reset Into JTAG Boot Mode Fails](img/xsdb_reset_into_JTAG_mode_fails.png)
+
+
+
+
+## Notes
+
+Zynq PS with PL-PCIe cannot meet the 100ms PCIe Requirement.
+
+![Zynq PS with PL-PCIe Cannot Meet PCIe Requirement](img/Zynq_PS_with_PL-PCIe_Cannot_Meet_100ms_PCIe_Requirement.png)
+
 
 
 
